@@ -1,0 +1,292 @@
+
+body{
+    height: 300vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr 300fr 500fr 300fr 100fr 100fr 100fr 100fr;
+    grid-template-rows: 75fr 300fr 300fr 135fr 25fr 75fr 300fr 300fr 135fr 25fr 75fr 300fr 300fr 135fr;
+    column-gap:10px;
+    row-gap:15px;
+}
+
+.item{
+    border: 3px groove black;
+    border-radius: 30px;
+    background-color: darkgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+    body { background-color: black; }
+
+    .header{
+        text-align:center;
+        grid-column:6/6;
+        grid-row:1/1;
+        font-size:25px;
+    }
+    .nav{
+        display: flex;
+        margin-top:875px;
+        margin-left:45px;
+        position:fixed;
+    }
+    .nav ul{
+        list-style-type: none;
+    }
+    .nav ul li{
+        color: black;
+        float: left;
+        margin: 5px;
+        
+    }
+
+    li{
+        border: 3px groove black;
+        border-radius: 30px;
+        background-color: darkgrey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a:link, a:visited {
+        color:black;
+    }
+   
+    .image{
+        grid-column:5/5;
+        grid-row:2/2;
+        height:250px;
+        width:300px;
+    }
+    .image2{
+        grid-column:7/7;
+        grid-row:2/2;
+        height:250px;
+        width:300px;
+    }
+    .home{
+        position:sticky;
+        text-align:center;
+        grid-column:2/2;
+        grid-row: 4/4;
+    }
+    .contact{
+        text-align:center;
+        grid-column:4/4;
+        grid-row: 4/4;
+    }
+    .about{
+        text-align:center;
+        grid-column:3/3;
+        grid-row: 4/4;
+    }
+    .bannerLeft{
+        grid-column:1/2;
+        grid-row: 1/end;
+        background-color:white;
+    }
+    .bannerRight{
+        grid-column:11/12;
+        grid-row: 1/end;
+        background-color:white;
+    }
+    .trapezium {
+        height:0;
+        grid-column:5/8;
+        grid-row: 3/3;
+        border-bottom: 250px solid darkslategrey;
+        color:aliceblue;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        text-align:center;
+      }
+
+      p{
+        margin:20px;
+        font-size:25px;
+      }
+
+      .aboutHeader{
+        text-align:center;
+        grid-column:6/6;
+        grid-row:6/6;
+        font-size:25px;
+      }
+
+      .aboutMe{
+        grid-column:5/8;
+        grid-row:7/7;
+        border: 3px groove black;
+        background-color: darkgrey;
+      }
+
+      .contactHeader{
+        text-align:center;
+        grid-column:6/6;
+        grid-row:11/11;
+        font-size:25px;
+      }
+
+      .contactMe{
+        grid-column:5/8;
+        grid-row:12/12;
+        border: 3px groove black;
+        border-radius: 30px;
+        background-color: darkgrey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      #name{
+        width:500px;
+      }
+      #Email{
+        width:500px;
+      }
+      #Message{
+      }
+
+
+
+@media screen and ( max-width : 800px ) {
+    body { background-color: black; height: 250vh;}
+    #site {
+        display:grid;
+        grid-template-columns: 100fr 100fr 100fr;
+        grid-template-rows: 100px 50px 100fr 100fr 100fr 50px 100px 100fr 100px 100fr 50px 50px 50px;
+        column-gap:10px;
+        row-gap:15px;
+        border: 3px groove black;
+        border-radius: 30px;
+        background-color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+.header{
+    grid-column: 1/4;   
+    grid-row:1/1;
+    text-align:center;
+    font-size:25px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top:800px;
+    margin-left:45px;
+    position:fixed;
+}
+
+.image{
+    grid-column: 1/4;  
+    grid-row:3/3;
+    margin-left:auto;
+    margin-right:auto;
+}
+.image2{
+    grid-column: 1/4;   
+    grid-row:5/5;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.home{
+    position:sticky;
+    text-align:center;
+}
+.contact{
+    text-align:center;
+}
+.about{
+    text-align:center;
+}
+.bannerLeft{
+    grid-column: 1/4;   
+    grid-row:2/2;
+    background-color:white;
+}
+.bannerRight{
+    grid-column: 1/4;   
+    grid-row:6/6;
+    background-color:white;
+}
+.trapezium {
+    height:0;
+    grid-column: 1/4;    
+    grid-row:4/4;
+    border-bottom: 250px solid darkslategrey;
+    color:aliceblue;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+  }
+
+  .aboutHeader{
+    grid-column: 1/4;      
+    grid-row:7/7;
+    text-align:center;
+    font-size:25px;
+  }
+
+  .aboutMe{
+    grid-column: 1/4;      
+    grid-row:8/8;
+    border: 3px groove black;
+    background-color: darkgrey;
+  }
+
+  .contactHeader{
+    grid-column: 1/4;      
+    grid-row:9/9;
+    text-align:center;
+    font-size:25px;
+  }
+
+  .contactMe{
+    grid-column: 1/4;   
+    grid-row:10/10;
+    border: 3px groove black;
+    border-radius: 30px;
+    background-color: darkgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home{
+    position:sticky;
+    text-align:center;
+    grid-column:1/1;
+    grid-row: 11/11;
+}
+.contact{
+    text-align:center;
+    grid-column:2/2;
+    grid-row: 11/11;
+}
+.about{
+    text-align:center;
+    grid-column:3/3;
+    grid-row: 11/11;
+}
+
+#name{
+    width:500px;
+  }
+  #Email{
+    width:250px;
+  }
+  #Message{
+    width:350px;
+  }
+}
